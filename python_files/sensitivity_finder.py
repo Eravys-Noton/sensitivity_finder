@@ -2,7 +2,7 @@ import calculation
 import user_input
 
 def print_introduction ():
-    print("Pour faire ce test vous aurez besoin de trouver une cible immobile.")
+    print("Pour faire ce test vous aurez besoin de trouver une cible immobile et SURTOUT VOUS NE DEVEZ PAS ETRE ECHAUFFE.")
     print("Pour tester vos préférences de sensibilités, essayez de garder votre viseur sur la cible tout en vous déplaçant.")
     print("La sensibilité avec laquelle vous visez le mieux la cible est votre sensibilité préférée.")
     print("La sensibilité faible de départ doit être une sensi qui vous semble très lente, genre Papy et tout.")
