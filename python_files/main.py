@@ -22,8 +22,9 @@ def sens_finder ():
         avg = calculation.get_average(low, high)
         user_has_pref = user_input.has_pref()
 
-    print("Votre sensibilité finale est : {}".format(avg))
-    stop = input("Appuyez sur une touche pour fermer la fenêtre.")
     print("")
+    print("Votre sensibilité finale est : {}".format(avg))
+    print("")
+    stop = input("Appuyez sur une touche pour fermer la fenêtre.")
 
 sens_finder()
