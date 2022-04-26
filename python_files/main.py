@@ -1,5 +1,5 @@
 import calculation
-import input
+import user_input
 
 def print_introduction ():
     print("Pour faire ce test vous aurez besoin de trouver une cible immobile.")
@@ -8,19 +8,22 @@ def print_introduction ():
     print("")
 
 def sens_finder ():
-    sensitivities = input.get_sensitivities()
+    print_introduction()
+
+    sensitivities = user_input.get_sensitivities()
     low, high = sensitivities[0], sensitivities[1]
     avg = calculation.get_average(low, high)
-    user_has_pref = input.has_pref()
+    user_has_pref = user_input.has_pref()
 
     while user_has_pref == "o":
-        pref = input.choose_pref()
+        pref = user_input.choose_pref()
         sensitivities = calculation.get_new_sens(pref, low, high, avg)
         low, high = sensitivities[0], sensitivities[1]
         avg = calculation.get_average(low, high)
-        user_has_pref = input.has_pref()
+        user_has_pref = user_input.has_pref()
 
-    return avg
+    print("Votre sensibilité finale est : {}".format(avg))
+    stop = input("Appuyez sur une touche pour fermer la fenêtre.")
+    print("")
 
-print_introduction()
-print("Votre sensi est {}".format(sens_finder()))
+sens_finder()
