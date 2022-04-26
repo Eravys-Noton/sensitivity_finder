@@ -1,6 +1,5 @@
 import calculation
 import input
-import verification
 
 def print_introduction ():
     print("Pour faire ce test vous aurez besoin de trouver une cible immobile.")
