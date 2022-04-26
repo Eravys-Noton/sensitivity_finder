@@ -8,9 +8,13 @@ def verify_sensitivity(sens):
         return False
 
 def verify_pref(pref):
-    if str.lower(pref) != "o" and str.lower(pref) != "n":
-        input.has_pref()
+    if str.lower(pref) == "o" or str.lower(pref) == "n":
+        return True
+    else:
+        return False
 
 def verify_pref_choice (pref_choice):
-    if str.lower(pref_choice) != "f" and str.lower(pref_choice) != "h":
-        input.choose_pref()
+    if str.lower(pref_choice) == "f" or str.lower(pref_choice) == "h":
+        return True
+    else:
+        return False

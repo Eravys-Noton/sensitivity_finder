@@ -12,12 +12,11 @@ def get_sensitivities ():
 
 
 def has_pref ():
-    pref = input("Avez-vous une préférence pour une des sensis ? (O pour oui, N pour non) :")
-    if str.lower(pref) == "o":
-        return True
-    else:
-        return False
+    pref = input("Avez-vous une préférence pour une des sensis ? (O pour oui, N pour non) : ")
+    if verification.verify_pref(pref):
+        return str.lower(pref)
 
 def choose_pref ():
-    pref = input("Quelle est votre sensi préférée ? (F pour faible, H pour haute) : ")
-    return pref
+    pref_choice = input("Quelle est votre sensi préférée ? (F pour faible, H pour haute) : ")
+    if verification.verify_pref_choice(pref_choice):
+        return str.lower(pref_choice)
