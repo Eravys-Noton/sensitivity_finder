@@ -14,10 +14,7 @@ def sens_finder ():
     avg = calculation.get_average(low, high)
     user_has_pref = input.has_pref()
 
-    while not verification.verify_pref(user_has_pref):
-        user_has_pref = input.has_pref()
-
-    while user_has_pref == "o":
+    if user_has_pref == "o":
         pref = input.choose_pref()
         sensitivities = calculation.get_new_sens(pref, low, high, avg)
         low = sensitivities[0]
