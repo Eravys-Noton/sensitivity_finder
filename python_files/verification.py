@@ -1,5 +1,3 @@
-import input
-
 def verify_sensitivity(sens):
     try:
         float(sens)
