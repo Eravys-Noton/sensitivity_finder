@@ -4,24 +4,21 @@ import time
 
 def print_introduction ():
     sentences = [
+        "",
         "IMPORTANT A LIRE :",
-        "Pour faire ce test vous aurez besoin de trouver une cible immobile et SURTOUT VOUS NE DEVEZ PAS ETRE ECHAUFFE.",
-        "Pour tester vos préférences de sensibilités, essayez de garder votre viseur sur la cible tout en vous déplaçant.",
-        "La sensibilité avec laquelle vous visez le mieux la cible est votre sensibilité préférée.",
-        "Pour les nombres à virgule, ils doivent être saisis avec des POINTS et non des VIRGULES.",
-        "La sensibilité faible de départ doit être une sensi qui vous semble très lente, genre Papy et tout.",
-        "La sensiblité haute de départ doit être une sensi qui vous semble très rapide, genre Parkinson et tout.",
-        "Lors du test, il est normal de préférer un coup la sensi faible et un coup la sensi haute.",
+        "- Pour faire ce test vous aurez besoin de trouver une cible immobile et SURTOUT VOUS NE DEVEZ PAS ETRE ECHAUFFE.",
+        "- Pour tester vos préférences de sensibilités, essayez de garder votre viseur sur la cible tout en vous déplaçant.",
+        "- La sensibilité avec laquelle vous visez le mieux la cible est votre sensibilité préférée.",
+        "- Pour les nombres à virgule, ils doivent être saisis avec des POINTS et non des VIRGULES.",
+        "- La sensibilité faible de départ doit être une sensi qui vous semble très lente, genre Papy et tout.",
+        "- La sensiblité haute de départ doit être une sensi qui vous semble très rapide, genre Parkinson et tout.",
+        "- Lors du test, il est normal de préférer un coup la sensi faible et un coup la sensi haute.",
         ""
     ]
     for sentence in sentences:
         print(sentence)
 
-    for s in range(20, 0, -1):
-        loading = "Le test commence dans : " + str(s) + " secondes."
-        print(loading, end="\r")
-        time.sleep(1)
-
+    start = input("Appuyez sur une touche (si vous avez tout lu) pour commencer.")
     print("")
     print("DEBUT DU TEST : ")
 
