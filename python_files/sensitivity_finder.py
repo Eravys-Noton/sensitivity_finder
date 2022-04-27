@@ -17,7 +17,7 @@ def print_introduction ():
     for sentence in sentences:
         print(sentence)
 
-    for s in range(10, 0, -1):
+    for s in range(20, 0, -1):
         loading = "Le test commence dans : " + str(s) + " secondes."
         print(loading, end="\r")
         time.sleep(1)
