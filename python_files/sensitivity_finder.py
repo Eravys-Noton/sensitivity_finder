@@ -28,5 +28,6 @@ def sens_finder ():
     print("Votre sensibilité finale est : {}".format(avg))
     print("")
     stop = input("Appuyez sur une touche pour fermer la fenêtre.")
+    return 0
 
 sens_finder()
