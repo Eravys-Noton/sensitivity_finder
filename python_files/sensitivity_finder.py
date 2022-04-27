@@ -2,6 +2,9 @@ import calculation
 import user_input
 
 def print_introduction ():
+    """
+    print the test explanation
+    """
     sentences = [
         "",
         "IMPORTANT A LIRE :",
@@ -23,6 +26,10 @@ def print_introduction ():
 
 
 def sens_finder ():
+    """
+    main function : computes the new "best" starter sensitivity
+    :return: int
+    """
     print_introduction()
 
     sensitivities = user_input.get_sensitivities()
