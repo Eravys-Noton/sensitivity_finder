@@ -1,6 +1,5 @@
 import calculation
 import user_input
-import time
 
 def print_introduction ():
     sentences = [
