@@ -39,7 +39,9 @@ def sens_finder ():
 
     print("")
     print("Votre sensibilité finale est : {}".format(avg))
-    print("Jouez un certain temps avec pour bien l'essayer (les résultats ne se veront pas tout de suite, puis ajustez-la légèrement si besoin.")
+    print("Jouez un certain temps avec pour bien l'essayer (les résultats ne se veront pas tout de suite).")
+    print("Si jamais au bout d'un certain temps vous trouvez qu'il faut ajuster, faites-le petit à petit.")
+    print("")
     stop = input("Appuyez sur une touche pour fermer la fenêtre.")
     return 0
 
