@@ -16,7 +16,7 @@ def verify_pref(pref):
     :param pref: a string input
     :return: bool
     """
-    if pref == "o" or pref == "n":
+    if str.lower(pref) == "o" or str.lower(pref) == "n":
         return True
     else:
         return False
@@ -27,7 +27,7 @@ def verify_pref_choice (pref_choice):
     :param pref_choice: a string input
     :return: bool
     """
-    if pref_choice == "f" or pref_choice == "h":
+    if str.lower(pref_choice) == "f" or str.lower(pref_choice) == "h":
         return True
     else:
         return False
