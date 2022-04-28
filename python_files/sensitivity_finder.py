@@ -12,15 +12,15 @@ def print_introduction ():
         "- Pour tester vos préférences de sensibilités, essayez de garder votre viseur sur la cible tout en vous déplaçant.",
         "- La sensibilité avec laquelle vous visez le mieux la cible est votre sensibilité préférée.",
         "- Pour les nombres à virgule, ils doivent être saisis avec des POINTS et non des VIRGULES.",
-        "- La sensibilité faible de départ doit être une sensi qui vous semble très lente, genre Papy et tout.",
-        "- La sensiblité haute de départ doit être une sensi qui vous semble très rapide, genre Parkinson et tout.",
+        "- La sensibilité faible de départ doit être une sensibilité avec laquelle vous avez du mal à bouger la caméra",
+        "- La sensiblité haute de départ doit être une sensibilité avec laquelle vous tremblez lorsque vous bougez la caméra",
         "- Lors du test, il est normal de préférer un coup la sensi faible et un coup la sensi haute.",
         ""
     ]
     for sentence in sentences:
         print(sentence)
 
-    start = input("Appuyez sur une touche (si vous avez tout lu) pour commencer.")
+    start = input("Appuyez sur une touche lorsque vous êtes prêt.")
     print("")
     print("DEBUT DU TEST : ")
 
